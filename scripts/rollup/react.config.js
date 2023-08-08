@@ -1,3 +1,5 @@
+import generatePackageJson from 'rollup-plugin-generate-package-json';
+
 import { getPackageJson, resolvePath, getBasePlugins } from './utils';
 let { name, module } = getPackageJson('react');
 name = name.split('/')[1];
@@ -14,7 +16,19 @@ export default [
 			name: 'React',
 			format: 'umd'
 		},
-		plugins: [...getBasePlugins()]
+		plugins: [
+			...getBasePlugins(),
+			generatePackageJson({
+				inputFolder: pckPath,
+				outputFolder: distPath,
+				baseContents: ({ name, description, version }) => ({
+					name,
+					description,
+					version,
+					main: 'index.js'
+				})
+			})
+		]
 	},
 
 	// jsx-runtime
