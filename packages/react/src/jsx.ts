@@ -4,13 +4,13 @@ import {
 	ReactElement,
 	Ref,
 	Type,
-	key,
+	Key,
 	ElementType
 } from '@coderwei-mini-react18/shared/src/ReactTypes';
 
 const ReactElement = (
 	type: Type,
-	key: key,
+	key: Key,
 	ref: Ref,
 	props: Props
 ): ReactElement => {
