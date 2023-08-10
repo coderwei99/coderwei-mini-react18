@@ -1,0 +1,13 @@
+{
+	"name": "react-reconciler",
+	"version": "1.0.0",
+	"description": "React协调器",
+	"module": "index.ts",
+	"scripts": {},
+	"dependencies": {
+		"@coderwei-mini-react18/shared": "workspace:^1.0.0"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}

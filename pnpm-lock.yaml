@@ -60,6 +60,12 @@ importers:
         specifier: workspace:^1.0.0
         version: link:../shared
 
+  packages/react-reconciler:
+    dependencies:
+      '@coderwei-mini-react18/shared':
+        specifier: workspace:^1.0.0
+        version: link:../shared
+
   packages/shared: {}
 
 packages:
