@@ -1,13 +1,13 @@
 {
-  "name": "@coderwei-mini-react18/react",
-  "version": "1.0.0",
-  "description": "React 公共方法",
-  "module": "index.ts",
-  "scripts": {},
-  "dependencies": {
-    "@coderwei-mini-react18/shared": "workspace:^1.0.0"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+	"name": "@coderwei-mini-react18/react",
+	"version": "1.0.0",
+	"description": "React 公共方法",
+	"module": "index.ts",
+	"scripts": {},
+	"dependencies": {
+		"@coderwei-mini-react18/shared": "workspace:^1.0.0"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
 }
