@@ -45,3 +45,15 @@ export class FiberNode {
 		this.flags = NoFlags;
 	}
 }
+
+class FiberRootNode {
+	container: any;
+	current: FiberNode;
+	finishedWork: FiberNode | null;
+	constructor(container: any, hostRootFinish: FiberNode) {
+		this.container = container;
+		this.current = hostRootFinish;
+		hostRootFinish.stateNode = this;
+		this.finishedWork = null;
+	}
+}
